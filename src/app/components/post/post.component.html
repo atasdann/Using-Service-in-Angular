@@ -1,0 +1,23 @@
+<!-- <div>{{posts | json}}</div> -->
+<table class="table table-primary">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>User Id</th>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{post.id}}</td>
+      <td>{{post.userId}}</td>
+      <td>{{post.title}}</td>
+      <td>{{post.body}}</td>
+    </tr>
+    <tr *ngIf="posts.length==0">
+      <td colspan="4">View Bulunamadı.</td>
+    </tr>
+  </tbody>
+</table>

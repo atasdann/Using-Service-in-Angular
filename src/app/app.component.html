@@ -1,0 +1,74 @@
+<!-- <div
+  class="table-responsive">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of categories">
+        <td>{{category.id}}</td>
+        <td>{{category.name}}</td>
+      </tr>
+      <tr *ngIf="categories.length==0">
+        <td colspan="2">Kategori Bulunamadı.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Category Id</th>
+        <th>Name</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.categoryId}}</td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+      </tr>
+      <tr *ngIf="products.length==0">
+        <td colspan="4">Ürün Bulunamadı.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <input type="text" [(ngModel)]="searchText" class="form-control form-control-sm" placeholder="Arama Yapınız...">
+  <table class="table table-primary">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Category Id</th>
+        <th>Category Name</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Rate</th>
+        <th>Rate Count</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let view of getProductWithRateList()">
+        <td>{{view.id}}</td>
+        <td>{{view.categoryId}}</td>
+        <td>{{view.categoryName}}</td>
+        <td>{{view.name}}</td>
+        <td>{{view.price|currency:'₺':'symbol':'1.2-2'}}</td> pipe kullanılarak para birimi olarak tanımlandı (currency) ve bazı özellikleri değiştirildi
+        <td>{{view.rate|number:'1.2-2'}}</td>
+        <td>{{view.rateCount}}</td>
+      </tr>
+      <tr *ngIf="getProductWithRateList().length==0">
+        <td colspan="7">View Bulunamadı.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+-->
+<app-post></app-post>
