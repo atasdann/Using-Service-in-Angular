@@ -2,11 +2,12 @@ import { PostService } from './../../services/post.service';
 import { Component, OnInit } from '@angular/core';
 import { Post } from '../../entities/entity';
 import { CommonModule } from '@angular/common';
+import { CommentComponent } from './comment/comment.component';
 
 @Component({
   selector: 'app-post',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CommentComponent],
   templateUrl: './post.component.html',
   styleUrl: './post.component.scss'
 })
